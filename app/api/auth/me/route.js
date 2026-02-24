@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import { NextResponse } from "next/server";
 import connectToDB from "@/lib/dbconnection";
-import User from "@/models/User";
+import User from "@/models/user.model";
 
 export async function GET(request) {
     await connectToDB();
